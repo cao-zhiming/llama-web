@@ -27,13 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // API endpoint URL
     $url = 'https://worker-czm-ai.caozm.workers.dev/';
 
-    // JSON data
-    $jsonData = array(
-        'prompt' => $prompt  // Change 'messages' to 'prompt'
-    );
 
-    // Convert the array to JSON
-    $jsonString = json_encode($jsonData);
+    $jsonString = '{"messages": [{"prompt":'.$prompt.'}]}';
 
     // Initialize cURL session
     $ch = curl_init($url);
