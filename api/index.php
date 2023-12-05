@@ -12,7 +12,7 @@ echo '<!DOCTYPE html><html lang="en"><head>
             <form id="myForm" action="./index.php" method="post">
                 <div class="form-group">
                     <input type="text" placeholder="Ask the AI assistant anything..." class="form-control" id="inputName" name="prompttext" required>
-                </div>
+                </div><br>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             <div id="response" class="mt-4"></div>
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // JSON data
     $jsonData = array(
-        'messages' => $prompt
+        'prompt' => $prompt  // Change 'messages' to 'prompt'
     );
 
     // Convert the array to JSON
