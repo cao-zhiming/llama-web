@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $url = 'https://worker-czm-ai.caozm.workers.dev/';
 
 
-    $jsonString = '{"messages": [{"prompt":'.$prompt.'}]}';
+    $jsonString = '{"messages": [{"prompt":"'.$prompt.'"}]}';
 
     // Initialize cURL session
     $ch = curl_init($url);
