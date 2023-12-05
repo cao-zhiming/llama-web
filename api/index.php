@@ -1,36 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cao Zhiming's Llama AI</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.3.2/css/bootstrap.min.css">
-</head>
-<body>
-
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h2 class="mb-4">Ask the Llama AI</h2>
-            <form id="myForm" action="./index.php" method="post">
-                <div class="form-group">
-                    <input type="text" placeholder="Ask the AI assistant anything..." class="form-control" id="inputName" name="prompttext" required>
-                </div>
-    
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div id="response" class="mt-4"></div>
-        </div>
-    </div>
-</div>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.staticfile.org/jquery/3.7.1/jquery.slim.min.js"></script>
-<script src="https://cdn.staticfile.org/bootstrap/5.3.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+<?php
+echo "<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Cao Zhiming's Llama AI</title>    <!-- Bootstrap CSS -->    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.3.2/css/bootstrap.min.css"></head><body><div class="container mt-5">  <div class="row justify-content-center"><div class="col-md-6"><h2 class="mb-4">Ask the Llama AI</h2><form id="myForm" action="./index.php" method="post"><div class="form-group"><input type="text" placeholder="Ask the AI assistant anything..." class="form-control" id="inputName" name="prompttext" required></div><button type="submit" class="btn btn-primary">Submit</button></form><div id="response" class="mt-4"></div></div></div></div><script src="https://cdn.staticfile.org/jquery/3.7.1/jquery.slim.min.js"></script><script src="https://cdn.staticfile.org/bootstrap/5.3.2/js/bootstrap.min.js"></script></body></html>"
 
 
 
