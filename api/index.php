@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $url = 'https://worker-czm-ai.caozm.workers.dev/';
 
 
-    $jsonString = '{"messages": [{ role: "system", content: "You are a helpful assistant, you are MingAI. You can add emoji to your responses." },{ role: "user", content: "'.$prompt.'" }]';
+    $jsonString = '{"messages": "'. $prompt . ' . you can add emojis to your responses."}';
     // Initialize cURL session
     $ch = curl_init($url);
 
