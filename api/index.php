@@ -47,9 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Close cURL session
     curl_close($ch);
+    $array = json_decode($response, true);
+    $responseText = $array[0]['response']['response'];
+    $responseText = str_replace("\n", "<br>", $responseText);
+    echo $responseText;
 
-    // Process the response
-    echo $response;
 }
 echo '</div>
         </div>
