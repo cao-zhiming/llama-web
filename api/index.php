@@ -2,8 +2,7 @@
 echo '<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cao Zhiming\'s Llama AI</title>
-    <!-- Bootstrap CSS -->
+    <title>Cao Zhiming\'s AI</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.3.2/css/bootstrap.min.css">
 </head><body><div class="container mt-5">  
     <div class="row justify-content-center">
@@ -15,12 +14,7 @@ echo '<!DOCTYPE html><html lang="en"><head>
                 </div><br>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <div id="response" class="mt-4"></div>
-        </div>
-    </div>
-</div>
-<script src="https://cdn.staticfile.org/jquery/3.7.1/jquery.slim.min.js"></script>
-<script src="https://cdn.staticfile.org/bootstrap/5.3.2/js/bootstrap.min.js"></script>';
+            <div id="response" class="mt-4">';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prompt = $_POST["prompttext"];
@@ -55,8 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     curl_close($ch);
 
     // Process the response
-    echo '<script> document.getElementById("response").innerHTML = \'' . $response . '\';</script>';
+    echo $response;
 }
+echo '</div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.staticfile.org/jquery/3.7.1/jquery.slim.min.js"></script>
+<script src="https://cdn.staticfile.org/bootstrap/5.3.2/js/bootstrap.min.js"></script></body></html>';
 
-echo '</body></html>';
+
 ?>
