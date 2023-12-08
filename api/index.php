@@ -7,7 +7,7 @@ echo '<!DOCTYPE html><html lang="en"><head>
 </head><body><div class="container mt-5">  
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h2 class="mb-4">Ask the Zhiming\'s AI</h2>
+            <h2 class="mb-4">Ask the Zhiming's AI</h2>
             <form id="myForm" action="./index.php" method="post">
                 <div class="form-group">
                     <input type="text" placeholder="Ask the AI assistant anything..." class="form-control" id="inputName" name="prompttext" required>
@@ -22,10 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $url = 'https://worker-czm-ai.caozm.workers.dev/';
 
 
-    $jsonString = '[
-        { role: "system", content: "You are HangshenAI. You are a helpful assistant. You can add emoji to your responses." },
-        { role: "user", content: "'. $prompt .'" }
-      ]';
+    $jsonString = '{"messages": "'. $prompt . ' . Please answer this question, and you can add emojis to your responses."}';
     // Initialize cURL session
     $ch = curl_init($url);
 
