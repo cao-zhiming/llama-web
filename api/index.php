@@ -7,7 +7,7 @@ echo '<!DOCTYPE html><html lang="en"><head>
 </head><body><div class="container mt-5">  
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h2 class="mb-4">Ask the Zhiming's AI</h2>
+            <h2 class="mb-4">Ask the Zhiming\'s AI</h2>
             <form id="myForm" action="./index.php" method="post">
                 <div class="form-group">
                     <input type="text" placeholder="Ask the AI assistant anything..." class="form-control" id="inputName" name="prompttext" required>
