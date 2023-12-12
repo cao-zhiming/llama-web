@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set cURL options
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonString);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 6);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 50);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-Type: application/json',
         'Content-Length: ' . strlen($jsonString),
